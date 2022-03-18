@@ -1,0 +1,77 @@
+.cuerpo{
+    background-color: midnightblue;
+    margin: 0;
+}
+
+.encabezado{
+    color: blanchedalmond;
+    text-align: center;
+}
+
+.presentacion{
+    color: white;
+    font: oblique bold 120% cursive;
+}
+
+.texto{
+    color: blanchedalmond;
+}
+
+.stilo1 {
+    background-color: rgb(104, 22, 22);
+    margin-top: 50px;
+    left: 190px;
+    position: relative;
+    border: 3px dashed red;
+    height: 260px;
+    width: 260px;
+    padding: 100px;
+}
+
+.base {
+    width: 120px;
+    height: 50px;
+    font-weight: bold;
+    line-height: 1.5;
+    text-align: center;
+    border: 3px ridge black;
+}
+
+
+.box-1{
+    position: absolute;
+    top: 0%;
+    left: 0%;
+    background-color: blue;
+}
+
+.box-2{
+    position: absolute;
+    top: 0;
+    right: 0;
+    background-color: brown;
+}
+
+.box-3{
+    position: absolute;
+    bottom: 0%;
+    left: 0;
+    background-color: rgb(42, 85, 165);
+}
+
+.box-4{
+    position: absolute;
+    bottom: 0%;
+    right: 0;
+    background-color: rgb(42, 170, 74);
+}
+
+.box-5{
+    position: absolute;
+    margin: auto;
+    top: 0%;
+    bottom: 0;
+    left: 0;
+    right: 0%;
+    background-color: rgb(255, 10, 10);
+}

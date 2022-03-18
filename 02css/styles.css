@@ -1,0 +1,58 @@
+.cuerpo{
+    background-color: midnightblue;
+    margin: 0;
+}
+
+.encabezado{
+    color: blanchedalmond;
+    text-align: center;
+}
+
+.pie_pagina{
+    position: sticky; bottom: 0px;
+    background-color: green;
+}
+
+.presentacion{
+    color: white;
+    font: oblique bold 120% cursive;
+}
+
+.sub_titulo{
+    color: powderblue;
+}
+
+.estilo1{
+    background-color: purple;
+    color: aqua;
+    font: size 30px;
+    text-align: center;
+    font-family: 'Times New Roman';
+    border: 3px dashed white;
+    padding: 10px;
+}
+
+.estilo2{
+    background-color: rgb(95, 4, 4);
+    color: aqua;
+    font: size 30px;
+    text-align: left;
+    font-family: 'Times New Roman';
+    border: 3px dashed rgb(241, 161, 168);
+    padding: 10px;
+}
+
+.estilo3{
+    background-color: rgb(9, 73, 4);
+    color: aqua;
+    font: size 30px;
+    text-align: right;
+    font-family: 'Times New Roman';
+    border: 3px dashed rgb(146, 231, 150);
+    padding: 10px;
+}
+
+.links{
+    background-color: rgb(251, 255, 0);
+    text-align: center;
+}
