@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./style.css">
+</head>
+<body class="cuerpo">
+    <div class="encabezado">
+        <h1>HOLA MUNDO CON CSS parte 2.1</h1>
+        <h4>Usando HTML y CSS te mostrare como se acomodan ciertos objetos en un contenedor el cual tiene medidas fijadas</h4>    
+    </div>
+    <hr>
+    <div style="background-color: black;">
+        <ul>
+            <h2 class="presentacion">Mi primer intento de pagina</h2>
+            <p class="presentacion">Esto fue diseñado por Miguel Angel Robles Tejerina</p>
+            <img src="https://cdn-icons-png.flaticon.com/512/1995/1995515.png" alt="error" width="80" height="80">
+        </ul>
+    </div>
+    <hr>
+    
+    <div>
+        <h1 style="color: blanchedalmond;">Calculadora</h1>
+        <div class="calculadora">
+          <div>
+            <input type="text" class="pantalla" id="pantalla" placeholder="Ingrese datos ..." readonly>
+          </div>
+          <button class="btn-limpiar" onclick="limpiar()">Limpiar</button>
+          <div class="botones">
+            <button class="boton" id="button_7" onclick="escribir('7')">7</button>
+            <button class="boton" id="button_8" onclick="escribir('8')">8</button>
+            <button class="boton" id="button_9" onclick="escribir('9')">9</button>
+            <button class="boton" id="button_dividir" onclick="escribir('/')">÷</button>
+            <button class="boton" id="button_4" onclick="escribir('4')">4</button>
+            <button class="boton" id="button_5" onclick="escribir('5')">5</button>
+            <button class="boton" id="button_6" onclick="escribir('6')">6</button>
+            <button class="boton" id="button_multiplicar" onclick="escribir('*')">x</button>
+            <button class="boton" id="button_1" onclick="escribir('1')">1</button>
+            <button class="boton" id="button_2" onclick="escribir('2')">2</button>
+            <button class="boton" id="button_3" onclick="escribir('3')">3</button>
+            <button class="boton" id="button_restar" onclick="escribir('-')">-</button>
+            <button class="boton" id="button_0" onclick="escribir('0')">0</button>
+            <button class="boton" id="button_punto" onclick="escribir('.')">.</button>
+            <button class="boton" id="button_igual" onclick="escribir('=')">=</button>
+            <button class="boton" id="button_adicionar" onclick="escribir('+')">+</button>
+          </div>
+        </div>
+      </div>
+      <script>
+        function limpiar(){
+          var pantalla = document.getElementById('pantalla')
+          pantalla.setAttribute('value', '')
+        }
+    
+        function escribir(simbolo) {
+          var pantalla = document.getElementById('pantalla');
+          var calcular = pantalla.getAttribute('value');
+          if (calcular == null) {
+            calcular = '';
+          }
+          if (simbolo == '='){
+            pantalla.setAttribute('value', evaluar(calcular));
+          } else {
+            calcular = calcular + simbolo;
+            pantalla.setAttribute('value', calcular);
+          }
+        }
+    
+        function evaluar(fn) {
+          return new Function('return ' + fn)();
+        }
+      </script>
+
+</body>
+</html>

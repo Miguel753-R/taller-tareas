@@ -4,11 +4,114 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=, initial-scale=1.0">
+
+    <link rel="stylesheet" href="./styles.css">
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+
     <title>Document</title>
 </head>
-<body>
-    
+<body style="background-color:rgb(97, 31, 31) ; margin: 0%;">
 
-    
+    <nav class="navbar sticky-top navbar-expand-lg navbar-dark bg-dark">
+        <div class="container-fluid">
+          <a class="navbar-brand" href="#">
+            <img src="./imagenes/puntajes.PNG" alt="" width="30" height="30" class="d-inline-block align-text-top">
+            Sistema de Estudiantes
+          </a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
+            aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="#">Inicio</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="https://www.purina.es/encuentra-mascota/razas-de-gato">Tipos de gatos</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="https://banfield.com.mx/blog/articulos-noticias/182-7-mitos-y-realidades-acerca-de-los-gatos">Mitos de gatos</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+      <div class="container-lg my-4">
+
+        <div style="text-align: center; color: blanchedalmond; font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;">
+          <h2>MIRA UNOS LINDOS GATITOS NEGROS</h2>
+        </div>
+
+      <div style="margin-left: 20%; margin-right: 20%; margin-top: 3%;" id="carouselExampleCaptions" class="carousel slide" data-bs-ride="carousel">
+        <div id="carouselExampleControls" class="carousel slide" data-bs-ride="carousel">
+          <div class="carousel-inner">
+            <div class="carousel-item active">
+              <img src="./imagenes/gatito1.jpg" class="d-block w-100" alt="..." style="height: 500px;" >
+            </div>
+            <div class="carousel-item">
+              <img src="./imagenes/gatito2.jpg" class="d-block w-100" alt="..."style="height: 500px;">
+            </div>
+            <div class="carousel-item">
+              <img src="./imagenes/gatito3.jpg" class="d-block w-100" alt="..."style="height: 500px;">
+            </div>
+            <div class="carousel-item">
+              <img src="./imagenes/gatito4.jpg" class="d-block w-100" alt="..."style="height: 500px;">
+            </div>
+          </div>
+          <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Previous</span>
+          </button>
+          <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Next</span>
+          </button>
+        </div>
+      </div>
+
+    <br><br>
+
+    <div class="container">
+      <div class="row row-cols-1 row-cols-md-3 g4">
+        <div class="col" style="border: 2px ridge rgb(247, 173, 173); text-align: center;">
+          <h4 style="color: blanchedalmond;">CUIDADOS</h4>
+          <img src="./imagenes/gatosano.jpg" class="card-img-top" alt="...">
+          <p style="color: blanchedalmond;">El aseo de tu gato no consiste únicamente en poner guapo a tu felino: retiras el pelo muerto, mantienes su pelaje y piel sana, te ayuda a construir una relación más estrecha y te da la oportunidad de comprobar su salud en general.
+            El aseo es importante a la hora de aprender a cómo cuidar a un gato, pero gracias a su pelaje corto y suave, apenas se tarda tiempo en comparación con los adultos. Si consigues que tu gato se acostumbre al aseo habitual desde una temprana edad, la vida será mucho 
+            más fácil para ambos en el futuro. La buena noticia es que la mayoría de los gatos tienen en cuenta tus amables cuidados, les encanta ser aseados y, en cuanto ven un peine o cepillo en tu mano, siempre vienen corriendo para los mimos.</p>
+          <button type="button" class="btn btn-primary"> <a href="https://www.purina-latam.com/mx/purina/nota/gatitos/como-cuidar-a-un-gato-y-como-asearlo" style="color: rgb(255, 255, 255); font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;">CONOCER MAS...</a> </button>
+        </div>
+        <div class="col" style="border: 2px ridge rgb(247, 173, 173); text-align: center;">
+          <h4 style="color: blanchedalmond;">ALIMENTACION</h4>
+          <img src="./imagenes/gatogordo.jpg" class="card-img-top" alt="...">
+          <p style="color: blanchedalmond;">Cuando el gatito llegue a casa por primera vez podremos darnos cuenta de que acusa el cambio y una de las primeras medidas para que no se sienta desorientado o inquieto es no cambiarle, en la medida de lo posible, los hábitos alimenticios
+            Los especialistas recomiendan que durante los primeros 10 días mantengamos la alimentación que recibía el animalito y que, gradualmente, le vayamos introduciendo los cambios en la dieta. Es importante tener presente esta regla cuando el gatito pase a la comida seca.
+            Tengamos en cuenta que los felinos rechazan los sabores nuevos, por lo que la mejor forma para evitar problemas digestivos consiste en ir introduciendo pequeñas porciones de la comida que queremos introducirle, junto con aquella a la que está habituado hasta que su paladar se acostumbre al nuevo alimento.</p>
+          <button type="button" class="btn btn-primary"> <a href="https://www.fundacion-affinity.org/perros-gatos-y-personas/tengo-un-animal-de-compania/la-alimentacion-del-gatito#:~:text=Los%20gatitos%20deben%20ingerir%20cantidades,formulada%20para%20cubrir%20sus%20necesidades." style="color: rgb(255, 255, 255); font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;">CONOCER MAS...</a> </button>
+        </div>
+        <div class="col" style="border: 2px ridge rgb(247, 173, 173); text-align: center;">
+          <h4 style="color: blanchedalmond;">ENTRETENIMIENTO</h4>
+          <img src="./imagenes/gatojugueton.jpg" class="card-img-top" alt="...">
+          <p style="color: blanchedalmond;">¿Sabías que existe el día del gato y se celebra cada 8 de Agosto?. Sí, ¿no lo sabías? No obstante, dicha fecha no está clara, pues muchos entendidos en asuntos felinos aseguran que también lo es el 20 de febrero y el 29 de octubre. No sabemos a qué se debe esta discrepancia de fechas, pero mejor para ellos pues tienen tres días en los que sus dueños tienen que volcarse en ellos por entero.
+            ¿Y cómo hacerlo? Pues jugando. De hecho, jugar con tu gato es tan importante como mantenerlo correctamente alimentado y cuidado. Lo cierto es que el juego le evita sufrir estrés, ansiedad e incluso depresión. En definitiva, si quieres velar por su salud, a tu gato no deben faltarle los entretenimientos para tenerle en forma tanto desde un punto de vista físico como mental.
+            Pero ¿a qué jugar con él? Pues te ponemos al tanto de una serie de juegos para gatos que le divertirán a él y también a ti. Vamos a ver cuáles son. Que empiece la diversión…</p>
+          <button type="button" class="btn btn-primary"> <a href="https://as.com/showroom/2019/08/07/portada/1565201990_622606.html" style="color: rgb(255, 255, 255); font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;">CONOCER MAS...</a> </button>
+        </div>
+      </div>
+    </div>
+    <br>
+    <div style="background-color: blanchedalmond; font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif; text-align: center;">
+      <p>RECUERDA CUIDAR A TUS GATITOS YA QUE NO SON SIMPLEMENTE MASCOTAS SON PARTE DE LA FAMILIA Y LA FAMILIA SE CUIDA COMO DIJO EL GRAN TORETTO</p>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.10.2/dist/umd/popper.min.js"
+    integrity="sha384-7+zCNj/IqJ95wo16oMtfsKbZ9ccEh31eOz1HGyDuCQ6wgnyJNSYdrPa03rtR1zdB"
+    crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.min.js"
+    integrity="sha384-QJHtvGhmr9XOIpI6YVutG+2QOK9T+ZnN4kzFN1RtK3zEFEIsxhlmWl5/YESvpZ13"
+    crossorigin="anonymous"></script>
 </body>
 </html>
